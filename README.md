@@ -7,6 +7,7 @@
   - [Rebase with `master`](#rebase-with-master)
 - [Lab 1: FizzBuzz](#lab-1-fizzbuzz)
 - [Lab 2: FizzBuzz (continued)](#lab-2-fizzbuzz-continued)
+- [Lab 2: Fibonacci](#lab-3-fibonacci)
 
 # Example Labs
 
@@ -125,3 +126,19 @@ View my solution to Lab 1 in the `Solutions/` folder.
 
 Modify your FizzBuzz program from Lab 1 to _count down from 100_ instead of
 counting up to 100.
+
+# Lab 3: Fibonacci
+
+Write a program that prints the first 15 Fibonacci numbers.
+
+Example:
+
+```text
+0
+1
+1
+2
+3
+5
+8
+```

@@ -39,7 +39,7 @@ git push origin firstname-0
 ```
 
 Now make another new branch from the one you just created, use your first name
-again and increment the numnber.
+again and increment the number.
 
 ```shell
 git checkout -b firstname-1

@@ -4,7 +4,6 @@
   - [Getting Started](#getting-started)
   - [Organization](#organization)
   - [Submitting](#submitting)
-  - [Rebase with `master`](#rebase-with-master)
 - [Lab 1: FizzBuzz](#lab-1-fizzbuzz)
 - [Lab 2: FizzBuzz (continued)](#lab-2-fizzbuzz-continued)
 - [Lab 2: Fibonacci](#lab-3-fibonacci)

@@ -6,7 +6,7 @@
   - [Submitting](#submitting)
 - [Lab 1: FizzBuzz](#lab-1-fizzbuzz)
 - [Lab 2: FizzBuzz (continued)](#lab-2-fizzbuzz-continued)
-- [Lab 2: Fibonacci](#lab-3-fibonacci)
+- [Lab 3: Fibonacci](#lab-3-fibonacci)
 
 # Example Labs
 

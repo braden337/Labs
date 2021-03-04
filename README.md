@@ -11,7 +11,7 @@
 
 # Example Labs
 
-This is where you will keep all of our lab work for this course. If you need a
+This is where you will keep your lab work for this course. If you need a
 refresher on git, see
 [this high-level](https://rogerdudler.github.io/git-guide/) git guide.
 
@@ -23,11 +23,11 @@ Clone this repository to your computer.
 git clone https://github.com/braden337/Labs.git
 ```
 
-From the `master` branch, make a new orphan branch for yourself (you can use
-your first name) and then delete `README.md`.
+From the `master` branch, make a new orphan branch for yourself (use your first
+name with the number zero) and then delete `README.md`.
 
 ```shell
-git checkout --orphan firstname
+git checkout --orphan firstname-0
 git rm -f README.md
 ```
 
@@ -36,30 +36,30 @@ Commit your changes, and push this to remote.
 ```shell
 git add .gitignore
 git commit -m "Ignore Visual Studio files"
-git push origin firstname
+git push origin firstname-0
 ```
 
 Now make another new branch from the one you just created, use your first name
-again but append the lab number you're working on like `-1`.
+again and increment the numnber.
 
 ```shell
 git checkout -b firstname-1
 ```
 
-You don't need the `master` or `firstname` branch locally anymore, so you can
+You don't need the `master` or `firstname-0` branch locally anymore, so you can
 delete them.
 
 ```shell
-git branch -d firstname
+git branch -d firstname-0
 git branch -d master
 ```
 
 ## Organization
 
 Let's use Lab 1: FizzBuzz as an example. In Visual Studio, create a new .NET
-Core console app named FizzBuzz and save it at the root of this repository.
+Core console app named `FizzBuzz` and save it at the root of this repository.
 
-Your repository should look like this.
+Your repository should now look like this.
 
 ```shell
 .gitignore
@@ -68,34 +68,42 @@ FizzBuzz/
 
 ## Submitting
 
-Once you've completed the lab, push your `firstname-1` branch to remote.
+Once you've made all your commits to complete the lab, push your `firstname-1`
+branch to remote.
 
 ```shell
-git push -u origin `firstname-1`
+git push origin `firstname-1`
 ```
 
-Then you can create a pull request on GitHub comparing your two branches (e.g.
-`firstname` compared to `firstname-1`).
+Then you can create a pull request on GitHub comparing your two consecutive
+branches.
+
+- Lab 1 is `firstname-0` compared to `firstname-1`
+- Lab 2 is `firstname-1` compared to `firstname-2`
+- Lab 3 is `firstname-2` compared to `firstname-3`
+- ...
 
 Make sure you give the pull request a title that makes sense (e.g. Firstname:
 Lab 1).
 
 You can ask your peers to review the code in your pull request, give feedback
-(comments in the pull request), or approve the merge into your `firstname`
-branch.
+(comments in the pull request), but there is no need to merge any of these.
 
-Now that you've made your pull request, get things ready for the next lab. Make
-a new branch from your `firstname-1` that you just finished with.
+Now that you've made your pull request, get things ready for the next lab. From
+`firstname-1`, check out a new branch.
 
 ```shell
 git branch -b firstname-2
 ```
 
-And you can also delete the previous branch because you're done with it now.
+You can delete the previous branch because you're done with it now.
 
 ```shell
 git branch -d firstname-1
 ```
+
+I will close each pull request once I've looked at it and updated your grade in
+mylearning.
 
 # Lab 1: FizzBuzz
 
